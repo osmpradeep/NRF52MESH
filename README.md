@@ -1,4 +1,4 @@
-# Light switch Example
+# Light switch Example with DFU (for DFU NRF CONNECT APP Required)
 
 
 ## Purpose
