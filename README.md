@@ -1,27 +1,22 @@
-# Light switch demo
+# Light switch Example
+
 
 ## Purpose
 
-This demo project consists of four sub examples - The light switch server with  GATT
+This demo project consists of one example which has combined server and client - The light switch server with  GATT
 proxy support, the light switch client and a provisioner example.
 
-It demonstrates the mesh eco system containing devices acting in two roles, a Provisioner role, and
-a Node role. In addition, it demonstrates how to use custom models by using
-the [Generic OnOff model](@ref GENERIC_ONOFF_MODEL) in
-a real application.
+It demonstrates the mesh eco system containing devices acting in two roles, a server role
+a Node role. Provisioning has done by NRF mesh app, after provisioing one of the node will act as client and rest of the nodes will act as servers. 
+
 
 
 ## Getting started
 
 ### Hardware requirements
 
-See [compatiblity](@ref readme-compatibility) section for the supported boards.
 
-- One development board for a client.
-- One development board for the provisioner.
-- One or more development boards for the servers.
-  If you have more than thirty boards for the servers, set `SERVER_NODE_COUNT` (in `light_switch_example_common.h`)
-  to the number of boards available and rebuild the provisioner example.
+- two or more development(nrf52832) boards for the servers.
 
 ### Running the demo
 
